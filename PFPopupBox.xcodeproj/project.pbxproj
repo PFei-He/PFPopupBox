@@ -20,8 +20,8 @@
 		CE56A1CC19B985330071193C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE56A1CA19B985330071193C /* InfoPlist.strings */; };
 		CE56A1CE19B985330071193C /* PFPopupBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56A1CD19B985330071193C /* PFPopupBoxTests.m */; };
 		CE56A1DA19B9858F0071193C /* PFPopupBox.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56A1D919B9858F0071193C /* PFPopupBox.m */; };
-		CE56A1DC19B986E40071193C /* images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE56A1DB19B986E40071193C /* images.bundle */; };
 		CE56A1DF19B986F90071193C /* RootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56A1DE19B986F90071193C /* RootVC.m */; };
+		CEEBDA3519F67C200081F568 /* PFCloseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBDA3419F67C200081F568 /* PFCloseButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +53,10 @@
 		CE56A1CD19B985330071193C /* PFPopupBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFPopupBoxTests.m; sourceTree = "<group>"; };
 		CE56A1D819B9858F0071193C /* PFPopupBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFPopupBox.h; sourceTree = "<group>"; };
 		CE56A1D919B9858F0071193C /* PFPopupBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFPopupBox.m; sourceTree = "<group>"; };
-		CE56A1DB19B986E40071193C /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = images.bundle; sourceTree = "<group>"; };
 		CE56A1DD19B986F90071193C /* RootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootVC.h; sourceTree = "<group>"; };
 		CE56A1DE19B986F90071193C /* RootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootVC.m; sourceTree = "<group>"; };
+		CEEBDA3319F67C200081F568 /* PFCloseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCloseButton.h; sourceTree = "<group>"; };
+		CEEBDA3419F67C200081F568 /* PFCloseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCloseButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,9 +159,10 @@
 		CE56A1D719B9854F0071193C /* PFPopupBox */ = {
 			isa = PBXGroup;
 			children = (
-				CE56A1DB19B986E40071193C /* images.bundle */,
 				CE56A1D819B9858F0071193C /* PFPopupBox.h */,
 				CE56A1D919B9858F0071193C /* PFPopupBox.m */,
+				CEEBDA3319F67C200081F568 /* PFCloseButton.h */,
+				CEEBDA3419F67C200081F568 /* PFCloseButton.m */,
 			);
 			path = PFPopupBox;
 			sourceTree = "<group>";
@@ -241,7 +243,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE56A1B319B985320071193C /* InfoPlist.strings in Resources */,
-				CE56A1DC19B986E40071193C /* images.bundle in Resources */,
 				CE56A1BB19B985320071193C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEBDA3519F67C200081F568 /* PFCloseButton.m in Sources */,
 				CE56A1DF19B986F90071193C /* RootVC.m in Sources */,
 				CE56A1B919B985320071193C /* AppDelegate.m in Sources */,
 				CE56A1DA19B9858F0071193C /* PFPopupBox.m in Sources */,
@@ -463,6 +465,7 @@
 				CE56A1D319B985330071193C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE56A1D419B985330071193C /* Build configuration list for PBXNativeTarget "PFPopupBoxTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +474,7 @@
 				CE56A1D619B985330071193C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

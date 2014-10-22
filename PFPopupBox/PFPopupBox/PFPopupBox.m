@@ -7,6 +7,7 @@
 //
 
 #import "PFPopupBox.h"
+#import "PFCloseButton.h"
 
 #define kLineColor [UIColor colorWithWhite:0.8 alpha:1.0f]
 #define kLineLayerBoardWidth 0.5f
@@ -77,7 +78,7 @@ typedef void (^tapBlock)(PFPopupBox *);
         float MARGIN_TOP = 0.0;
         float MARGIN_LEFT = 10.0;
         float MARGIN_RIGHT = 10.0;
-        float CLOSE_WIDTH = 30;
+        float CLOSE_WIDTH = 20;
 
         //标题
         titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(MARGIN_LEFT, MARGIN_TOP, frame.size.width - MARGIN_LEFT -MARGIN_RIGHT, 40)];
@@ -91,10 +92,10 @@ typedef void (^tapBlock)(PFPopupBox *);
         [view addSubview:line];
 
         //关闭按钮
-        UIButton *closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [closeButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"images.bundle/close_button@2x" ofType:@"png"]] forState:UIControlStateNormal];
-        closeButton.frame = CGRectMake(CGRectGetWidth(frame) - CLOSE_WIDTH - MARGIN_RIGHT, CGRectGetMinY(titleLabel.frame) + 5, CLOSE_WIDTH, CLOSE_WIDTH);
-        [closeButton addTarget:self action:@selector(hide) forControlEvents:UIControlEventTouchUpInside];
+        PFCloseButton *closeButton = [[PFCloseButton alloc] initWithFrame:CGRectMake(CGRectGetWidth(frame) - CLOSE_WIDTH - MARGIN_RIGHT, CGRectGetMinY(titleLabel.frame) + 10, CLOSE_WIDTH, CLOSE_WIDTH)];
+        closeButton.userInteractionEnabled = YES;
+        UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hide)];
+        [closeButton addGestureRecognizer:recognizer];
         [view addSubview:closeButton];
 
         _contentView = view;
