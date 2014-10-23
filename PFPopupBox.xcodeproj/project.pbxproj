@@ -159,10 +159,10 @@
 		CE56A1D719B9854F0071193C /* PFPopupBox */ = {
 			isa = PBXGroup;
 			children = (
-				CE56A1D819B9858F0071193C /* PFPopupBox.h */,
-				CE56A1D919B9858F0071193C /* PFPopupBox.m */,
 				CEEBDA3319F67C200081F568 /* PFCloseButton.h */,
 				CEEBDA3419F67C200081F568 /* PFCloseButton.m */,
+				CE56A1D819B9858F0071193C /* PFPopupBox.h */,
+				CE56A1D919B9858F0071193C /* PFPopupBox.m */,
 			);
 			path = PFPopupBox;
 			sourceTree = "<group>";

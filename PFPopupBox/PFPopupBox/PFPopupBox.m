@@ -41,10 +41,6 @@ typedef void (^tapBlock)(PFPopupBox *);
         _contentView = [self loadSubviews:CGRectMake(0, 0, width, height)];
         _contentView.center = CGPointMake([UIScreen mainScreen].bounds.size.width / 2, [UIScreen mainScreen].bounds.size.height / 2);
         [self addSubview:_contentView];
-
-        //点击手势
-        UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
-        [self addGestureRecognizer:recognizer];
     }
     return self;
 }
@@ -56,6 +52,16 @@ typedef void (^tapBlock)(PFPopupBox *);
 {
     _title = title;
     titleLabel.text = title;
+}
+
+//是否打开用户交互的setter方法
+- (void)setUserInteractionEnabled:(BOOL)userInteractionEnabled
+{
+    if (userInteractionEnabled) {
+        //点击手势
+        UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+        [self addGestureRecognizer:recognizer];
+    }
 }
 
 #pragma mark - Private Methods
