@@ -22,13 +22,13 @@
 @interface PFPopupBox : UIView
 
 ///标题
-@property (nonatomic, copy)     NSString                *title;
+@property (nonatomic, copy)             NSString                *title;
 
 ///内容视图
-@property (nonatomic, strong)   UIView                  *contentView;
+@property (nonatomic, strong, readonly) UIView                  *contentView;
 
 ///代理
-@property (nonatomic, weak)     id<PFPopupBoxDelegate>  delegate;
+@property (nonatomic, weak)             id<PFPopupBoxDelegate>  delegate;
 
 /**
  *  @brief 初始化内容视图

@@ -18,6 +18,7 @@ typedef void (^tapBlock)(PFPopupBox *);
 @interface PFPopupBox ()
 {
     UILabel *titleLabel;
+    UIView  *_contentView;
 }
 
 ///点击事件
@@ -37,8 +38,8 @@ typedef void (^tapBlock)(PFPopupBox *);
         self.alpha = 1;
 
         //内容视图
-        self.contentView = [self loadSubviews:CGRectMake(0, 0, width, height)];
-        self.contentView.center = CGPointMake([UIScreen mainScreen].bounds.size.width / 2, [UIScreen mainScreen].bounds.size.height / 2);
+        _contentView = [self loadSubviews:CGRectMake(0, 0, width, height)];
+        _contentView.center = CGPointMake([UIScreen mainScreen].bounds.size.width / 2, [UIScreen mainScreen].bounds.size.height / 2);
         [self addSubview:_contentView];
 
         //点击手势
