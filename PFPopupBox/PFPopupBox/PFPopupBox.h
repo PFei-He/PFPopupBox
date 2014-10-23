@@ -14,6 +14,7 @@
 
 /**
  *  @brief 点击弹出框
+ *  @details 使用前必须先打开用户交互功能（***.userInteractionEnabled = YES;）
  */
 - (void)popupBoxDidTapped;
 
@@ -49,6 +50,7 @@
 
 /**
  *  @brief 点击弹出框
+ *  @details 使用前必须先打开用户交互功能（.userInteractionEnabled = YES;）
  */
 - (void)popupBoxDidTappedUsingBlock:(void (^)())block;
 
