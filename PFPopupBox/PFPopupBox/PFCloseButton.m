@@ -25,6 +25,8 @@
 //重绘视图
 - (void)drawRect:(CGRect)rect
 {
+    [super drawRect:rect];
+
     //添加画布
     CGContextRef context = UIGraphicsGetCurrentContext();
 

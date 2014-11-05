@@ -144,11 +144,23 @@ typedef void (^tapBlock)(PFPopupBox *);
 //弹出框点击事件
 - (void)tap:(id)sender
 {
-    if (!self.delegate && self.tapBlock) {//监听块并回调
-        self.tapBlock(self);
-    } else if([self.delegate respondsToSelector:@selector(popupBoxDidTapped)]) {//监听代理并回调
+    if([self.delegate respondsToSelector:@selector(popupBoxDidTapped)]) {//监听代理并回调
         [self.delegate popupBoxDidTapped];
+    } else if (self.tapBlock) {//监听块并回调
+        self.tapBlock(self);
     }
+}
+
+#pragma mark - Memory Management
+
+- (void)dealloc
+{
+#if __has_feature(objc_arc)
+    self.tapBlock = nil;
+
+    self.delegate = nil;
+#else
+#endif
 }
 
 /*
