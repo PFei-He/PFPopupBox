@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE56A1A419B985320071193C"
-               BuildableName = "PFPopupBox.app"
-               BlueprintName = "PFPopupBox"
-               ReferencedContainer = "container:PFPopupBox.xcodeproj">
+               BlueprintIdentifier = "CE355D1F1A3FD7F800502E11"
+               BuildableName = "Demo.app"
+               BlueprintName = "Demo"
+               ReferencedContainer = "container:Demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE56A1BF19B985320071193C"
-               BuildableName = "PFPopupBoxTests.xctest"
-               BlueprintName = "PFPopupBoxTests"
-               ReferencedContainer = "container:PFPopupBox.xcodeproj">
+               BlueprintIdentifier = "CE355D3A1A3FD7F800502E11"
+               BuildableName = "DemoTests.xctest"
+               BlueprintName = "DemoTests"
+               ReferencedContainer = "container:Demo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE56A1A419B985320071193C"
-            BuildableName = "PFPopupBox.app"
-            BlueprintName = "PFPopupBox"
-            ReferencedContainer = "container:PFPopupBox.xcodeproj">
+            BlueprintIdentifier = "CE355D1F1A3FD7F800502E11"
+            BuildableName = "Demo.app"
+            BlueprintName = "Demo"
+            ReferencedContainer = "container:Demo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE56A1A419B985320071193C"
-            BuildableName = "PFPopupBox.app"
-            BlueprintName = "PFPopupBox"
-            ReferencedContainer = "container:PFPopupBox.xcodeproj">
+            BlueprintIdentifier = "CE355D1F1A3FD7F800502E11"
+            BuildableName = "Demo.app"
+            BlueprintName = "Demo"
+            ReferencedContainer = "container:Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE56A1A419B985320071193C"
-            BuildableName = "PFPopupBox.app"
-            BlueprintName = "PFPopupBox"
-            ReferencedContainer = "container:PFPopupBox.xcodeproj">
+            BlueprintIdentifier = "CE355D1F1A3FD7F800502E11"
+            BuildableName = "Demo.app"
+            BlueprintName = "Demo"
+            ReferencedContainer = "container:Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

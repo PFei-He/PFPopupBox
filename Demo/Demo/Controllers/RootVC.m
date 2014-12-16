@@ -1,9 +1,9 @@
 //
 //  RootVC.m
-//  PFPopupBox
+//  Demo
 //
-//  Created by PFei_He on 14-9-5.
-//  Copyright (c) 2014年 PFei_He. All rights reserved.
+//  Created by PFei_He on 14-12-16.
+//  Copyright (c) 2014年 PF-Lib. All rights reserved.
 //
 
 #import "RootVC.h"
@@ -23,6 +23,8 @@
     }
     return self;
 }
+
+#pragma mark - Views Management
 
 - (void)viewDidLoad
 {

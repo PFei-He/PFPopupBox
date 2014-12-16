@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>PFPopupBox.xcscheme</key>
+		<key>Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>CE56A1A419B985320071193C</key>
+		<key>CE355D1F1A3FD7F800502E11</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CE56A1BF19B985320071193C</key>
+		<key>CE355D3A1A3FD7F800502E11</key>
 		<dict>
 			<key>primary</key>
 			<true/>
